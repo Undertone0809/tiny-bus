@@ -1,0 +1,41 @@
+{
+  "name": "@zeeland/tiny-bus",
+  "version": "0.0.1",
+  "description": "A simple event bus implementation for React applications",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "tiny-bus",
+    "event-bus",
+    "react",
+    "pubsub",
+    "broadcast",
+    "typescript"
+  ],
+  "author": {
+    "name": "Zeeland",
+    "email": "zeeland4work@gmail.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@types/react": "^17.0.19",
+    "rollup": "^2.56.3",
+    "rollup-plugin-dts": "^4.0.0",
+    "typescript": "^4.4.2",
+    "tslib": "^2.3.1"
+  }
+}
